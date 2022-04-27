@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 8em;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    left: 45px;
+    top: 15px;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+#title {
+    text-align: center;
+}
+
+#title h1 {
+    text-transform: uppercase;
+    font: 5em 'Bebas Neue';
+}
+
+#title h5 {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+#hero {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#hero img {
+    width: 100%;
+}
+
+#news {
+    font: bold 2em 'Bebas Neue';
+    margin-top: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.row {
+    overflow: auto;
+}
+
+.content article {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: end;
+}
+
+.one div {
+    padding-left: 23px;
+}
+
+.two div {
+    padding-right: 22x;
+}
+
+.content h3 {
+    font: 1.6em 'Bebas Neue';
+}
+
+.content button {
+    text-align: center;
+    border: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 45px;
+    border-radius: 10px;
+    background-color: #eaaf46;
+    margin-top: 23px;
+}
+
+.content p {
+    font: 1.3em 'arial';
+    line-height: 1.6em;
+}
+
+.follow {
+    padding: 31px 0px;
+    font: 1.4em 'arial';
+    font-weight: 500;
+    text-align: center;
+}
+
+.follow img {
+    width: 30px;
+    height: 30px;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.bgbrown {
+    background-color: #eaaf46;
+}
+
+.txtbrown {
+    color: #eaaf46
+}
+
+#menu {
+    font: 1em 'arial';
+    padding: 25px 0px 45px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 500;
+
+}
+
+#menu a {
+    color: #000;
+}
+
+@media only screen and (max-width: 940px) {
+    .container {
+        width: 100vw;
+    }
+
+    #title h1 {
+        font-size: 2em;
+    }
+
+    header img {
+        width: 80vmin;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row article {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .row article img {
+        width: 100vw;
+    }
+
+    #menu {
+        display: inherit;
+        text-align: center;
+    }
+
+    #menu li {
+        margin-bottom: 5px;
+    }
+
+    .row .two {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .two .meqale {
+        padding-left: 20px;
+    }
+
+    header {
+        height: 7em;
+    }
+
+    html, body {
+        overflow: auto;
+    }
+}
